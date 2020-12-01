@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="Click">
+            <h1>What can JavaScript do?</h1>
+            <p id="demo"></p>
+            <button type="button" onclick='document.getElementById("demo").innerHTML="hello JavaScript"'>Click Me!</button>
+        </div> 
+        
+        <div class="Font">
+            <h2>JavaScript can change the style</h2>
+            <p id="umar">JavaScript can change the style of an HTML element.</p>
+            <button type="button" onclick="document.getElementById('umar').style.fontSize='30px'">Click Me!</button>
+        </div>
+
+        <div class="data">
+            <h1>Exercise1</h1>
+            <p id="javascript"></p>
+            <script>
+                document.write(5+6);
+            </script>
+        </div>
+
+        <div class="window">
+            <p>My first javascript</p>
+            <script>
+              window.alert('Welcome to our site');  
+            </script>
+        </div>
+
+        <div class="print">
+            <p>Click the button to print this page</p>
+            <button onclick="window.print()">Print this page</button> 
+        </div>
+
+        <div class="statement">
+            <p id="cal1"></p>
+            <script>
+                var x, y, z;
+                x = 5;
+                y = 6; 
+                z = x + y;
+                document.getElementById('cal1').innerHTML = z ;
+            </script>
+        </div>
+
+        <div class="xy">
+            <h1> Example2  </h1>
+            <p id="yx"></p>
+
+            <script>
+                var x, y;
+                x = 5 + 10;
+                y = x * 3;
+
+                document.getElementById('yx').innerHTML = y;
+            </script>
+        </div>
+
+        <div class="time">
+            <button onclick="document.getElementById('vaqt').innerHTML =Date()"> Click here to show the time </button>
+            <p id="vaqt"></p>
+        </div>
+        
+        <div class="replace">
+            <p id="yako"> I am Yahyo </p>
+            <button onclick="Umar()"> Try it </button>
+            <script>
+                function Umar() {
+                    var str = document.getElementById('yako').innerHTML;
+                    var txt = str.replace("Yahyo", "Umar");
+                    document.getElementById('yako').innerHTML = txt;
+                }
+            </script>
+        </div>
+
+        <div class="replaceItem">
+            <button onclick="qaytarish()">Try it</button>
+            <p id="bos">Umar Ismailjanov</p>
+            <script>
+                function qaytarish() {
+                    var str = document.getElementById('bos').innerHTML;
+                    var txt = str.replace("Umar", "Yaxyo");
+                    document.getElementById('bos').innerHTML = txt;
+                }
+            </script>
+        </div>
+
+        <div class="Boshharf">
+            <button onclick="kattaHarf()">Bosing</button>
+            <p id="harf">Umar Ismailjanov</p>
+            <script>
+                function kattaHarf() {
+                    var txt = document.getElementById('harf').innerHTML;
+                    document.getElementById('harf').innerHTML = txt.toUpperCase();
+
+                }
+            </script>
+        </div>
+
+        <div class="ArrayQowiw">
+            <button onclick="qowiw()">Try it</button>
+            <p id="add"></p>
+            <script>
+                var x = ["Umar"];
+                document.getElementById('add').innerHTML = x;
+
+                function qowiw() {
+                    x.push('Ismailjanov');
+                    document.getElementById('add').innerHTML = x;
+                }
+            </script>
+        </div>
+    </body>
+</html>
